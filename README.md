@@ -31,17 +31,17 @@ Then go to `train_student.py` to complete the teacher model path and the trainin
 ### **Task #1: clean image fusion**
 
 Run
-`python test_AWF_clean.py --ir_path Ir_Image_For_testing --vi_path Vi_Image_For_testing --fuse_ckpt Fusion_model_path --dehaze_ckpt Dehaze_model_path --save_path result_save_path`
+`python test_AWF_clean.py --ir_path Ir_Image_For_testing --vi_path Vi_Image_For_testing --deweather_ckpt Allweather_Fuse.pth --save_path result_save_path`
 
 
 ### **Task #2: single weather image fusion**
 
 Run
-`python test_AWF_singleweather.py --ir_path Ir_Image_For_testing --vi_path Vi_Image_For_testing --fuse_ckpt Fusion_model_path --dehaze_ckpt Dehaze_model_path --save_path result_save_path`
+`python test_AWF_singleweather.py --ir_path Ir_Image_For_testing --vi_path Vi_Image_For_testing --deweather_ckpt Allweather_Fuse.pth --save_path result_save_path`
 
 ### Task #3: multiple weather disturbances for Image fusion
 Run
-`python test_AWF_Multiweather.py --ir_path Ir_Image_For_testing --vi_path Vi_Image_For_testing --fuse_ckpt Fusion_model_path --dehaze_ckpt Dehaze_model_path --save_path result_save_path`
+`python test_AWF_Multiweather.py --ir_path Ir_Image_For_testing --vi_path Vi_Image_For_testing --deweather_ckpt Allweather_Fuse.pth --save_path result_save_path`
 
 ## Image Dehazing
 <table border="0" cellspacing="0" cellpadding="0">
