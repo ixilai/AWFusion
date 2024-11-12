@@ -28,18 +28,18 @@ Then go to `train_student.py` to complete the teacher model path and the trainin
 
 ## To Test
 
-### **Task #1: clean image fusion**
+### **Task #1: Clean image fusion**
 
 Run
 `python test_AWF_clean.py --ir_path Ir_Image_For_testing --vi_path Vi_Image_For_testing --deweather_ckpt Allweather_Fuse.pth --save_path result_save_path`
 
 
-### **Task #2: single weather image fusion**
+### **Task #2: All weather image fusion (Single Weather Interference)**
 
 Run
 `python test_AWF_singleweather.py --ir_path Ir_Image_For_testing --vi_path Vi_Image_For_testing --deweather_ckpt Allweather_Fuse.pth --save_path result_save_path`
 
-### Task #3: multiple weather disturbances for Image fusion
+### Task #3: All weather image fusion (Multitype Weather Interference)
 Run
 `python test_AWF_Multiweather.py --ir_path Ir_Image_For_testing --vi_path Vi_Image_For_testing --deweather_ckpt Allweather_Fuse.pth --save_path result_save_path`
 
