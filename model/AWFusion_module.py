@@ -4,7 +4,7 @@ import torchvision
 
 from model.net import Decoder_simple
 from model.net_lista import LRR_NET
-from model.dehaze_net import DRSformer as DeweatherNet
+from model.deweather_net import DRSformer as DeweatherNet
 from utils22.img_read_save import RGB2YCrCb
 from model.trans_rgb import YCbCr2RGB
 
