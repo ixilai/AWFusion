@@ -121,3 +121,16 @@ Fig2. Comparison of fusion results obtained by the proposed algorithm under snow
 
 ![Gallery](assets/Rain.png)
 Fig3. Comparison of fusion results obtained by the proposed algorithm under rain weather, and the results of the comparison methods under ideal condition.
+
+
+
+## Citation
+If you find our work useful for your research, please cite our paper. 
+```
+@article{li2024physical,
+  title={Physical Perception Network and an All-weather Multi-modality Benchmark for Adverse Weather Image Fusion},
+  author={Li, Xilai and Liu, Wuyang and Li, Xiaosong and Tan, Haishu},
+  journal={arXiv preprint arXiv:2402.02090},
+  year={2024}
+}
+```
