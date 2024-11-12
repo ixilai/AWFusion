@@ -27,6 +27,7 @@ Then go to `train_student.py` to complete the teacher model path and the trainin
 * Run `torchrun --nproc_per_node = (The number of GPUs you have) train_student.py`
 
 ## To Test
+The pretrain weights is at [Baidu Drive](https://pan.baidu.com/s/1XTlnTZigqaMGhnSyEi9ytg) (code: m3ru) | [Google Drive](https://drive.google.com/file/d/1hk_4XUKz2ZzlxhRfRIQ2oqMDwQynvpun/view?usp=drive_link).
 
 ### **Task #1: Clean Image Fusion**
 
