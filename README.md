@@ -1,5 +1,5 @@
 ### All-weather Multi-Modality Image Fusion: Unified Framework and 100k Benchmark 
-### [Arxiv](https://arxiv.org/abs/2402.02090) | [Code]([https:](https://github.com/ixilai/AWFusion)) 
+### [Arxiv](https://arxiv.org/abs/2402.02090) | [Code](https://github.com/ixilai/AWFusion) 
 ![](assets/liucheng.png)
 
 ## Requirements
