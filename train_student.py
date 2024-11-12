@@ -22,29 +22,29 @@ def hyper_args():
     """
     parser = argparse.ArgumentParser(description='RobF Net train process')
     # dataset
-    parser.add_argument('--haze', default='/public/home/w__y/datasets/Fusion_Train_all/ALL_Train_LXL/Haze/vi', type=str)
-    parser.add_argument('--haze_GT', default='/public/home/w__y/datasets/Fusion_Train_all/ALL_Train_LXL/Haze/gt_vi', type=str)
-    parser.add_argument('--haze_ir', default='/public/home/w__y/datasets/Fusion_Train_all/ALL_Train_LXL/Haze/ir', type=str)
-    parser.add_argument('--haze_ir_GT', default='/public/home/w__y/datasets/Fusion_Train_all/ALL_Train_LXL/Haze/gt_ir', type=str)
+    parser.add_argument('--haze', default='./Train/Haze/vi', type=str)
+    parser.add_argument('--haze_GT', default='./Train/Haze/gt_vi', type=str)
+    parser.add_argument('--haze_ir', default='./Train/Haze/ir', type=str)
+    parser.add_argument('--haze_ir_GT', default='./Train/Haze/gt_ir', type=str)
 
-    parser.add_argument('--rain', default='/public/home/w__y/datasets/Fusion_Train_all/ALL_Train_LXL/Rain/vi', type=str)
-    parser.add_argument('--rain_GT', default='/public/home/w__y/datasets/Fusion_Train_all/ALL_Train_LXL/Rain/gt_vi', type=str)
-    parser.add_argument('--rain_ir', default='/public/home/w__y/datasets/Fusion_Train_all/ALL_Train_LXL/Rain/ir', type=str)
-    parser.add_argument('--rain_ir_GT', default='/public/home/w__y/datasets/Fusion_Train_all/ALL_Train_LXL/Rain/gt_ir', type=str)
+    parser.add_argument('--rain', default='./Train/Rain/vi', type=str)
+    parser.add_argument('--rain_GT', default='./Train/Rain/gt_vi', type=str)
+    parser.add_argument('--rain_ir', default='./Train/Rain/ir', type=str)
+    parser.add_argument('--rain_ir_GT', default='./Train/Rain/gt_ir', type=str)
 
-    parser.add_argument('--snow', default='/public/home/w__y/datasets/Fusion_Train_all/ALL_Train_LXL/Snow/vi', type=str)
-    parser.add_argument('--snow_GT', default='/public/home/w__y/datasets/Fusion_Train_all/ALL_Train_LXL/Snow/gt_vi', type=str)
-    parser.add_argument('--snow_ir', default='/public/home/w__y/datasets/Fusion_Train_all/ALL_Train_LXL/Snow/ir', type=str)
-    parser.add_argument('--snow_ir_GT', default='/public/home/w__y/datasets/Fusion_Train_all/ALL_Train_LXL/Snow/gt_ir', type=str)
+    parser.add_argument('--snow', default='./Train/Snow/vi', type=str)
+    parser.add_argument('--snow_GT', default='./Train/Snow/gt_vi', type=str)
+    parser.add_argument('--snow_ir', default='./Train/Snow/ir', type=str)
+    parser.add_argument('--snow_ir_GT', default='./Train/Snow/gt_ir', type=str)
     # train loss weights
     parser.add_argument('--t_dehaze_ckpt',
-                        default='/public/home/w__y/code/AWFusion/ckpt_haze/Fuse_haze.pth',
+                        default='./ckpt_haze/Fuse_haze.pth',
                         )
     parser.add_argument('--t_derain_ckpt',
-                        default='/public/home/w__y/code/AWFusion/ckpt_rain/Fuse_rain.pth',
+                        default='./ckpt_rain/Fuse_rain.pth',
                         )
     parser.add_argument('--t_desnow_ckpt',
-                        default='/public/home/w__y/code/AWFusion/ckpt_snow/Fuse_snow.pth',
+                        default='./ckpt_snow/Fuse_snow.pth',
                         )
     # implement details
     parser.add_argument('--size', default = 96, type=int, help='图片裁剪大小')
@@ -56,7 +56,7 @@ def hyper_args():
                         help="Sets the learning rate to the initial LR decayed by momentum every n epochs, Default: n=10")
     parser.add_argument('--interval', default=2, help='record interval')
     # checkpoint
-    parser.add_argument("--load_model_fuse", default='/public/home/w__y/code/AWFusion/ckpt_student/Allweather_Fuse.pth', help="path to pretrained model (default: none)")
+    parser.add_argument("--load_model_fuse", default='./ckpt_student/Allweather_Fuse.pth', help="path to pretrained model (default: none)")
     parser.add_argument('--ckpt', default='./ckpt_student', help='checkpoint cache folder')
 
     args = parser.parse_args()

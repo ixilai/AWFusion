@@ -27,10 +27,10 @@ def hyper_args():
     parser = argparse.ArgumentParser(description='RobF Net train process')
 
     # dataset
-    parser.add_argument('--ir_path', default='/public/home/w__y/datasets/Fusion_Train_all/ALL_Rain_train/small2/ir', type=str)
-    parser.add_argument('--vi_path', default='/public/home/w__y/datasets/Fusion_Train_all/ALL_Rain_train/small2/vi', type=str)
-    parser.add_argument('--gt_path', default='/public/home/w__y/datasets/Fusion_Train_all/ALL_Rain_train/small2/gt_vi', type=str)
-    parser.add_argument('--gt_ir_path',default='/public/home/w__y/datasets/Fusion_Train_all/ALL_Rain_train/small2/gt_ir',type=str)
+    parser.add_argument('--ir_path', default='../datasets/Fusion_Train_all/ALL_Rain_train/small2/ir', type=str)
+    parser.add_argument('--vi_path', default='../datasets/Fusion_Train_all/ALL_Rain_train/small2/vi', type=str)
+    parser.add_argument('--gt_path', default='../datasets/Fusion_Train_all/ALL_Rain_train/small2/gt_vi', type=str)
+    parser.add_argument('--gt_ir_path',default='../datasets/Fusion_Train_all/ALL_Rain_train/small2/gt_ir',type=str)
 
     # implement details
     parser.add_argument('--batch_size', default=1, type=int, help='mini-batch size')  # 32

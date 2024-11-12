@@ -15,10 +15,10 @@ os.environ['CUDA_VISIBLE_DEVICES'] = '1'
 def hyper_args():
     parser = argparse.ArgumentParser(description='RobF Net train process')
     #
-    parser.add_argument('--ir_path', default='./test/ir', type=str)
-    parser.add_argument('--vi_path', default='./test/vi', type=str)
-    parser.add_argument('--save_path', default='./results', type=str)
-    parser.add_argument("--deweather_ckpt", default='./ckpt/Allweather_Fuse.pth', help="path to pretrained model")
+    parser.add_argument('--ir_path', default='../datasets/Harvard_dataset/test/ir', type=str)
+    parser.add_argument('--vi_path', default='../datasets/Harvard_dataset/test/vi', type=str)
+    parser.add_argument('--save_path', default='./results2/Harvard', type=str)
+    parser.add_argument("--deweather_ckpt", default='./ckpt_student/Allweather_Fuse.pth', help="path to pretrained model (deweather)")
     return parser.parse_args()
 #
 args = hyper_args()
