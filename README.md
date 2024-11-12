@@ -1,4 +1,4 @@
-### Unified Image Fusion Framework and Benchmark for Multi-modality Fusion under Adverse Weather
+### All-weather Multi-Modality Image Fusion: Unified Framework and 100k Benchmark 
 ### [Arxiv](https:) | [Code](https:) 
 ![](assets/liucheng.png)
 
