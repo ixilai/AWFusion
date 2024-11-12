@@ -1,5 +1,5 @@
 ### All-weather Multi-Modality Image Fusion: Unified Framework and 100k Benchmark 
-### [Arxiv](https://arxiv.org/abs/2402.02090) | [Code](https:) 
+### [Arxiv](https://arxiv.org/abs/2402.02090) | [Code]([https:](https://github.com/ixilai/AWFusion)) 
 ![](assets/liucheng.png)
 
 ## Requirements
@@ -15,11 +15,11 @@
 
 ## To train
 
-### Traning Stage 1: AWF teacher net
+### Traning Stage 1: AWFusion Teacher Net
 You need to go into `train_teacher.py` first to set parameters such as the path and save path of the training data
 * Run `torchrun --nproc_per_node = (The number of GPUs you have) train_teacher.py`
 
-### Traning Stage 2: AWF student net
+### Traning Stage 2: AWFusion Student Net
 
 In training stage 1, you should train three teacher models (corresponding to rain, haze, and snow respectively)
 * You need to go into `train_student.py` 
@@ -28,18 +28,18 @@ Then go to `train_student.py` to complete the teacher model path and the trainin
 
 ## To Test
 
-### **Task #1: Clean image fusion**
+### **Task #1: Clean Image Fusion**
 
 Run
-`python test_AWF_clean.py --ir_path Ir_Image_For_testing --vi_path Vi_Image_For_testing --deweather_ckpt Allweather_Fuse.pth --save_path result_save_path`
+`python test_AWF_clean.py --ir_path Ir_Image_For_testing --vi_path Vi_Image_For_testing --deweather_ckpt Allweather_Fuse.pth --save_path Result_save_path`
 
 
-### **Task #2: All weather image fusion (Single Weather Interference)**
+### **Task #2: All Weather Image Fusion (Single Weather Interference)**
 
 Run
 `python test_AWF_singleweather.py --ir_path Ir_Image_For_testing --vi_path Vi_Image_For_testing --deweather_ckpt Allweather_Fuse.pth --save_path result_save_path`
 
-### Task #3: All weather image fusion (Multitype Weather Interference)
+### Task #3: All Weather Image Fusion (Multitype Weather Interference)
 Run
 `python test_AWF_Multiweather.py --ir_path Ir_Image_For_testing --vi_path Vi_Image_For_testing --deweather_ckpt Allweather_Fuse.pth --save_path result_save_path`
 
