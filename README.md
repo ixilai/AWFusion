@@ -127,10 +127,11 @@ Fig3. Comparison of fusion results obtained by the proposed algorithm under rain
 ## Citation
 If you find our work useful for your research, please cite our paper. 
 ```
-@article{li2024physical,
-  title={Physical Perception Network and an All-weather Multi-modality Benchmark for Adverse Weather Image Fusion},
-  author={Li, Xilai and Liu, Wuyang and Li, Xiaosong and Tan, Haishu},
-  journal={arXiv preprint arXiv:2402.02090},
+@article{li2024all,
+  title={All-weather Multi-Modality Image Fusion: Unified Framework and 100k Benchmark},
+  author={Li, Xilai and Liu, Wuyang and Li, Xiaosong, Zhou Fuqiang, Li Huafeng and Nie Feiping},
+  journal={arXiv preprint arXiv:2402.02090v2},
   year={2024}
 }
+
 ```
