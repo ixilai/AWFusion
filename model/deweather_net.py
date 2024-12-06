@@ -552,7 +552,7 @@ class PFB(nn.Module):  # physical block
 
 #######################################################################################################################################
 
-class DRSformer(nn.Module):
+class DeweatherNet(nn.Module):
     def __init__(self,
                  inp_channels=3,
                  out_channels=3,
@@ -563,7 +563,7 @@ class DRSformer(nn.Module):
                  bias=False,
                  LayerNorm_type='WithBias'  ## Other option 'BiasFree'
                  ):
-        super(DRSformer, self).__init__()
+        super(DeweatherNet, self).__init__()
 
         self.patch_embed = OverlapPatchEmbed(inp_channels, dim)
 
