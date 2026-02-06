@@ -127,11 +127,13 @@ Fig3. Comparison of fusion results obtained by the proposed algorithm under rain
 ## Citation
 If you find our work useful for your research, please cite our paper. 
 ```
-@article{li2024all,
-  title={All-weather Multi-Modality Image Fusion: Unified Framework and 100k Benchmark},
-  author={Li, Xilai and Liu, Wuyang and Li, Xiaosong, Zhou Fuqiang, Li Huafeng and Nie Feiping},
-  journal={arXiv preprint arXiv:2402.02090v2},
-  year={2024}
+@article{li2026all,
+  title={All-weather multi-modality image fusion: Unified framework and 100k benchmark},
+  author={Li, Xilai and Liu, Wuyang and Li, Xiaosong and Zhou, Fuqiang and Li, Huafeng and Nie, Feiping},
+  journal={Information Fusion},
+  pages={104130},
+  year={2026},
+  publisher={Elsevier}
 }
 
 ```
